@@ -21,5 +21,5 @@ void test_validate_my_username()
 	const char *hard_coded_username = my_username();
 	char *username_of_conf_file = malloc_username_from_conf_file();
 	
-    TEST_ASSERT_EQUAL_STRING_MESSAGE(hard_coded_username, username_of_conf_file, "FAILED OCCUR!");
+    TEST_ASSERT_EQUAL_STRING_MESSAGE(hard_coded_username, username_of_conf_file, "FAILED: invalid value!");
 }
