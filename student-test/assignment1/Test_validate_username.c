@@ -22,4 +22,7 @@ void test_validate_my_username()
 	char *username_of_conf_file = malloc_username_from_conf_file();
 	
     TEST_ASSERT_EQUAL_STRING_MESSAGE(hard_coded_username, username_of_conf_file, "FAILED: invalid value!");
+
+	 //free memory for buffer
+	 free(username_of_conf_file);
 }
